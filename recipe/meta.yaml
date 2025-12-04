@@ -48,7 +48,7 @@ test:
     - tests
   commands:
     - pip check
-    - pytest tests
+    - pytest -ra -q -m 'not manual' tests
 
 about:
   summary: Tools for preparing and working with neuroglancer scenes
