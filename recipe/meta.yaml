@@ -1,5 +1,5 @@
 {% set name = "ngsidekick" %}
-{% set version = "0.0.9" %}
+{% set version = "0.0.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/janelia-flyem/ngsidekick/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: cb326827eb9272b014975fe414c82753a53f37b2c58d391b7f34d41354f770b9
+  sha256: 5e5519076d7af28da7be8bbd145e194e442e624aa26e6f26e481030ae9602bbd
 
 build:
   number: 0
