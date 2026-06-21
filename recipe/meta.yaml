@@ -1,5 +1,5 @@
 {% set name = "ngsidekick" %}
-{% set version = "0.0.9" %}
+{% set version = "0.0.19" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/janelia-flyem/ngsidekick/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: cb326827eb9272b014975fe414c82753a53f37b2c58d391b7f34d41354f770b9
+  sha256: 9d5941d4b22ea9f21595507f7faf09003e25b6fb22c95eb03ea4af4d7ebfc77e
 
 build:
   number: 0
@@ -27,14 +27,16 @@ requirements:
     - hatch-vcs
   run:
     - python >={{ python_min }}
-    - tqdm
-    - requests
-    - flask
     - numpy
     - pandas
+    - pyarrow
+    - duckdb
     - numba
-    - neuroglancer
+    - tqdm
     - tensorstore
+    - neuroglancer
+    - requests
+    - flask
 
 test:
   imports:
